@@ -12,12 +12,21 @@ body{
     text-align: center;
     background-color: #414141;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 header {
     position: absolute;
     left: 0;
     right: 0;
     margin: 1em;
+}
+.container {
+    width: 95%;
+    max-width: 70em;
+    margin: 0 auto;
 }
 
 
@@ -48,7 +57,13 @@ nav a:focus {
     color: #DDD
 }
 
-
+.banner{
+    background-image: url(../img/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    color: #FFF;
+}
 
 @media (min-width: 60rem) {
     .logo {
@@ -57,8 +72,28 @@ nav a:focus {
         float: left;
         /*margin: 1em;*/
     }
+    .banner{
+        height: 100vh;
+        padding-top: 35vh;
+    }
 
     nav {
         float: right;
     }
+}
+
+/* Type scheme
+=================*/
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+    font-weight: 900;
+    margin-top: 4em;
+}
+
+.title span {
+    margin: 1em;
+    font-weight: 300;
+    display: block;
+    font-size: .9em;
 }
