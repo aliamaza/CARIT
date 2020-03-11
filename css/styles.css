@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+    scrollbar-color: #2a2c2e #1c1e1f;
+}
+body{
+    margin: 0;
+    font-family: 'Ubuntu';
+    text-align: center;
+    background-color: #414141;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1em;
+}
+
+
+/* Top of Page
+=================*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .5em;
+    color: #FFF;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #DDD
+}
+
+
+
+@media (min-width: 60rem) {
+    .logo {
+        width: 10%;
+        height: 10%;
+        float: left;
+        /*margin: 1em;*/
+    }
+
+    nav {
+        float: right;
+    }
+}
